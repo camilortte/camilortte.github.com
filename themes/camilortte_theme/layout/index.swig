@@ -37,7 +37,7 @@
                             <header>
                                 <h2 class="post-title"><a href="{{post.path}}">{{post.title}}</a></h2>
                                 <p class="post-meta">
-                                    Por <a href="#" class="post-author">Camilo, </a> 
+                                    Por <a href="#" class="post-author">{{config.author}}, </a> 
                                     Escrito el {{post.updated |date('Y-m-d')}}
                                     <br><br>                   
                                     {# Tags {{post.tags}}
@@ -59,6 +59,30 @@
         </div>
 
         {% include "./partial/footer.swig" %}
+
+        <script>
+          var cb = function() {
+            var l = document.createElement('link'); l.rel = 'stylesheet';
+            l.href = 'css/blog.css';
+            var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+          };
+          var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+              webkitRequestAnimationFrame || msRequestAnimationFrame;
+          if (raf) raf(cb);
+          else window.addEventListener('load', cb);
+        </script>
+
+        <!-- Google Analytics -->
+        <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-56089086-1', 'auto');
+        ga('send', 'pageview');
+
+        </script>
 
         {{js(path, 'js/velocity.min.js')}}
         <script type="text/javascript">     

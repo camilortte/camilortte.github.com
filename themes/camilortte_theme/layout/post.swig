@@ -8,7 +8,7 @@
                 <h2 class="post-title">{{post.title}}</h2>
 
                 <p class="post-meta">
-                    Por <a href="#" class="post-author">Tilo Mitra,  </a> 
+                    Por <a href="#" class="post-author">{{config.author}},  </a> 
                     Escrito el {{post.updated|date('Y-m-d')}}
                     <br><br>                   
                     {# Tags <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>                             #}
