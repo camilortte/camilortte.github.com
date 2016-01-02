@@ -151,26 +151,6 @@
 
         </script>
 
-        <script src="/2015/10/05/hello-world/index.html.js" type="text/javascript"></script>
-<script src="/js/velocity.min.js" type="text/javascript"></script>
-        <script type="text/javascript">     
-            var logo = document.getElementsByClassName("logome")[0];
-            Velocity(logo, "fadeIn", { 
-                duration: 500,
-                complete: function () { 
-                    logo.addEventListener( 'mouseover', function() {            
-                        Velocity(logo, "stop");
-                        Velocity(logo, {boxShadowSpread: "5em"}, {easing: "easeInSine", duration: 300});
-                    });
-
-                    logo.addEventListener( 'mouseout', function() {            
-                        Velocity(logo, "stop");            
-                        Velocity(logo, {boxShadowSpread: "0em"}, {easing: "easeInSine", duration: 300});
-                        // Velocity(logo, "reverse", { duration: 1500 })
-                    });               
-                }
-            });
-        </script>
     </div>
 </body>
 </html>
