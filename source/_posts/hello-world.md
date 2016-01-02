@@ -2,8 +2,9 @@ title: Aprendizaje por Refuerzo, algoritmo Sarsa aplicado a un problema de Ajedr
 date: 2015-10-05 22:12:07
 comments: true
 tags: 
-    - pedro
-    - camilo
+    - Inteligencia artificial
+    - Proyecto de grado
+    - Articulo cientifico
 ---
 
 Éste es un articulo escrito en en el año 2013 como sustentación del proyecto final de la asignatura de Inteligencia Artificial.

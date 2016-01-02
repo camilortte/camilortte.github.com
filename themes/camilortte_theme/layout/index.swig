@@ -8,7 +8,8 @@
     <meta name="description" content="{{config.description}}">
     <title>.:{% block title %}{{config.title}}{% endblock %}:.</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    {{css(path, 'css/styles.css')}}
+
 
     <!--[if lte IE 8]>  
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">  
@@ -32,7 +33,7 @@
             <div class="posts">                
                 {% block content %}
                     <h1 class="content-subhead">Artilculos </h1>
-                    {% for post in site.posts  %}                       
+                    {% for post in site.posts.sort('date', 'desc')  %}                       
                         <article>
                             <header>
                                 <h2 class="post-title"><a href="{{post.path}}">{{post.title}}</a></h2>
@@ -101,25 +102,6 @@
 
         </script>
 
-        {{js(path, 'js/velocity.min.js')}}
-        <script type="text/javascript">     
-            var logo = document.getElementsByClassName("logome")[0];
-            Velocity(logo, "fadeIn", { 
-                duration: 500,
-                complete: function () { 
-                    logo.addEventListener( 'mouseover', function() {            
-                        Velocity(logo, "stop");
-                        Velocity(logo, {boxShadowSpread: "5em"}, {easing: "easeInSine", duration: 300});
-                    });
-
-                    logo.addEventListener( 'mouseout', function() {            
-                        Velocity(logo, "stop");            
-                        Velocity(logo, {boxShadowSpread: "0em"}, {easing: "easeInSine", duration: 300});
-                        // Velocity(logo, "reverse", { duration: 1500 })
-                    });               
-                }
-            });
-        </script>
     </div>
 </body>
 </html>
