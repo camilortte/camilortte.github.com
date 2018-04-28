@@ -218,20 +218,22 @@ h3 {
     }
 
     .content {
-        padding: 2em 3em 0;
-        margin-left: 25%;
+        /*padding: 2em 3em 0;
+        margin-left: 25%; */
+        margin-left: 5%;
+        margin-right: : 5%;
     }
 
     .header {
-        margin:20% 2em 0;
+        /* margin:20% 2em 0;*/
         text-align: center;
-        font-size: 60%;
+        font-size: 60%; 
     }
 
     .sidebar {
-        position: fixed;
+        /*position: fixed;
         top: 0;
-        bottom: 0;
+        bottom: 0;*/
     }
 
     .nav-list{  
