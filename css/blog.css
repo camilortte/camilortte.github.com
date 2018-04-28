@@ -238,7 +238,7 @@ h3 {
 
     .nav-list{  
         padding-top: 0.5em;
-        display: inline-block;
+        /*display: inline-block;*/
     }
 
 }
