@@ -36,7 +36,7 @@ h3 {
 .sidebar {
     background: #3C4F5D;
     color: #fff;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .brand-title,
@@ -45,28 +45,19 @@ h3 {
     margin: 0;
     text-align: center;
 }
-.brand-title {
-    text-transform: uppercase;
-}
 .brand-tagline {
     font-weight: 300;
-    color: rgb(176, 202, 219);
+    color: #31ADC8;
 }
-.social-neworks{
-    margin-top: 1em;    
+.social-neworks a{
+    color: #fff;
+    text-decoration: none;
 }
-.social-neworks span{
-    font-size: 1.8em;
-    margin-right: 0.5em;
-}
-
-
 
 .header img{
     border-radius: 100%;
     text-align: center;
     margin: auto;
-    width: 50%;
 }
 
 .nav-list {
@@ -170,12 +161,19 @@ h3 {
     color: #ccc;
     font-size: 80%;
 }
+.footer .pure-menu ul{
+    margin: 0;
+    padding: 0;
+}
 .footer .pure-menu a:hover,
 .footer .pure-menu a:focus {
     background: none;
 }
+.footer {
+    text-align: center;
+}
 
-@media (min-width: 48em) {
+@media only screen and (min-width: 48em){ /*≥ 768px	*/
     .content {
         padding: 2em 3em 0;
         margin-left: 25%;
@@ -192,47 +190,115 @@ h3 {
         bottom: 0;
     }
 
-    .footer {
-        text-align: center;
+    .brand-title {
+        font-size: 2em;
     }
+
+    .brand-tagline {
+        font-size: 1.2em;
+    }
+
+    .social-neworks{
+        margin-top: 1em; 
+    }
+    .social-neworks span{
+        font-size: 1.5em;        
+    }
+    .social-neworks a{
+        margin-right: 0.5em;
+    }    
+    
+    .header img{
+        width: 80%;
+        max-height: 200px;
+        max-width:  200px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 48em){ /*≥ 568px <768px*/
+    .brand-title {
+        font-size: 2.5em;
+    } 
+
+    .header img{
+        width: 25%;
+    }
+
+    .header {
+        margin: 1em auto;
+    }
+
+    .social-neworks{
+        margin-top: 0.5em; 
+    }
+    .social-neworks span{
+        font-size: 1em;
+    }
+    .social-neworks a{
+        margin-right: 0.5em;
+    } 
+}
+
+@media only screen and (max-width: 35.5em){ /*<= 568px*/
+    /* .brand-title {
+        font-size: 2.5em;
+    } 
+
+    .header img{
+        width: 25%;
+    }
+
+    .header {
+        margin: 1em auto;
+    }
+
+    .social-neworks{
+        margin-top: 0.5em; 
+    }
+    .social-neworks span{
+        font-size: 1em;
+        margin-right: 0.5em;
+    } */
 }
 
 
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../../fonts/icomoon.eot?rx25c5');
-    src:  url('../../fonts/icomoon.eot?rx25c5#iefix') format('embedded-opentype'),
-      url('../../fonts/icomoon.ttf?rx25c5') format('truetype'),
-      url('../../fonts/icomoon.woff?rx25c5') format('woff'),
-      url('../../fonts/icomoon.svg?rx25c5#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-github:before {
-    content: "\e900";
-  }
-  .icon-twitter:before {
-    content: "\ea96";
-  }
-  .icon-youtube:before {
-    content: "\ea9d";
-  }
-  .icon-linkedin:before {
-    content: "\eac9";
-  }
+font-family: 'icomoon';
+src:  url('../../fonts/icomoon.eot?rx25c5');
+src:  url('../../fonts/icomoon.eot?rx25c5#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon.ttf?rx25c5') format('truetype'),
+    url('../../fonts/icomoon.woff?rx25c5') format('woff'),
+    url('../../fonts/icomoon.svg?rx25c5#icomoon') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+/* use !important to prevent issues with browser extensions that change fonts */
+font-family: 'icomoon' !important;
+speak: none;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+
+/* Better Font Rendering =========== */
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+content: "\e900";
+}
+.icon-twitter:before {
+content: "\ea96";
+}
+.icon-youtube:before {
+content: "\ea9d";
+}
+.icon-linkedin:before {
+content: "\eac9";
+}
