@@ -74,5 +74,14 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: [
+          require('path').resolve(__dirname, 'node_modules')
+        ]
+      }
+    },
+    
   ],
 }
