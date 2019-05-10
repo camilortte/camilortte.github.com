@@ -1,8 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { rhythm, scale } from "../utils/typography"
-import './base.scss';
+import { rhythm, scale } from "../../utils/typography"
+import './scss/base.scss';
+import Footer from "./Footer/index";
+import Nav from "./Nav/index";
+
 
 class Layout extends React.Component {
   render() {
@@ -56,31 +59,10 @@ class Layout extends React.Component {
       <div id="layout" className="pure-g">
 
         <div className="sidebar pure-u-1 pure-u-md-6-24">
-          <div className="header">
-            <img alt="Camilo Ramirez avatar" className="head-img" src="https://rpj.bembi.org/small-deer.2a0425af.svg" />
-            <h1 className="brand-title"><span className="gray">/</span>Un<span className="orange">\b</span>ackend<span
-              className="gray">/g</span></h1>
-            <h2 className="brand-tagline">Programación y otro poco++</h2>
-
-            <div className="social-neworks">
-              <a href="solial-link"><span className="icon-github"></span></a>
-              <a href="solial-link"><span className="icon-twitter"></span></a>
-              <a href="solial-link"><span className="icon-youtube"></span></a>
-              <a href="solial-link"><span className="icon-linkedin"></span></a>
-            </div>
-
-            <nav className="nav">
-              <ul className="nav-list">
-                <li className="nav-item">
-                  <a className="pures-button" href="http://purecss.io">About</a>
-                </li>
-                <li className="nav-item">
-                  <a className="pures-button" href="http://purecss.io">Blog</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          <Nav/>
         </div>
+
+        
         <div className="content pure-u-1 pure-u-md-18-24"><div>
 
           <section className="posts">
