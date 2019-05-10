@@ -1,0 +1,25 @@
+/* Animations */
+#heart {
+  display: inline-block;
+  animation: heartbeat 6.6s infinite;
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  10% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(0.75);
+  }
+  30% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}

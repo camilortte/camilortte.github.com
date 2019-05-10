@@ -1,0 +1,101 @@
+@media only screen and (min-width: 48em) {
+  /*≥ 768px	*/
+
+  .content {
+    padding: 2em 3em 0;
+    margin-left: 25%;
+  }
+
+  .header {
+    margin: 50% 2em 0;
+    text-align: center;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  }
+
+  .brand-title {
+    font-size: 2em;
+  }
+
+  .brand-tagline {
+    font-size: 1.2em;
+  }
+
+  .social-neworks {
+    margin-top: 1em;
+  }
+  .social-neworks span {
+    font-size: 1.5em;
+  }
+  .social-neworks a {
+    margin-right: 0.5em;
+  }
+
+  .header img {
+    width: 80%;
+    max-height: 200px;
+    max-width: 200px;
+  }
+}
+
+@media only screen and (min-width: 48em) and (max-width: 66em) {
+  .brand-title {
+    font-size: 1.5em;
+  }
+
+  .brand-tagline {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  /*≥ 568px <768px*/
+  .brand-title {
+    font-size: 2em;
+  }
+
+  .header img {
+    width: 25%;
+  }
+
+  .header {
+    margin: 1em auto;
+  }
+
+  .social-neworks {
+    margin-top: 0.5em;
+  }
+  .social-neworks span {
+    font-size: 1em;
+  }
+  .social-neworks a {
+    margin-right: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 35.5em) {
+  /*<= 568px*/
+  /* .brand-title {
+          font-size: 2.5em;
+      } 
+  
+      .header img{
+          width: 25%;
+      }
+  
+      .header {
+          margin: 1em auto;
+      }
+  
+      .social-neworks{
+          margin-top: 0.5em; 
+      }
+      .social-neworks span{
+          font-size: 1em;
+          margin-right: 0.5em;
+      } */
+}
