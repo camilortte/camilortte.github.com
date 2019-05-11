@@ -1,6 +1,7 @@
 import React from "react"
 import Particles from 'react-particles-js';
 import './scss/nav.scss';
+import Scramble from 'react-scramble';
 
 function Nav() {
 	return (
@@ -75,7 +76,22 @@ function Nav() {
 
 			<h1 className="brand-title"><span className="gray">/</span>Un<span className="orange">\b</span>ackend<span
 				className="gray">/g</span></h1>
-			<h2 className="brand-tagline">Programación y otro poco++</h2>
+			<Scramble className="brand-tagline"
+				autoStart
+				text="Programación y otro poco++"
+				steps={[
+				{
+					roll: 30,
+					action: '+',
+					type: 'forward',
+				},
+				{
+					roll: 120,
+					action: '-',
+					type: 'forward',
+				},
+				]}
+			/>
 
 			<div className="social-neworks">
 				<a href="solial-link"><span className="icon-github"></span></a>
