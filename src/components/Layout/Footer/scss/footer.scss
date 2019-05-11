@@ -1,0 +1,41 @@
+footer {
+    $text_color:  #ccc;
+
+    padding: 1em 0;
+    color: $text_color;
+    text-align: center;
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    a {
+        color: $text_color;
+        font-size: 80%;
+    }
+    .pure-menu{
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        a:hover, a:focus {
+            background: none;
+        }
+    }
+    .pure-menu-item {
+        a {
+            padding-left: 0.4em;
+            padding-right: 0.4em;
+            color: $text_color;
+        }
+    }
+    
+    hr {
+        border-top: 1px dashed $text_color;
+    }
+  
+}
+
+@import 'animations';

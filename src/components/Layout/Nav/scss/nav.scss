@@ -1,0 +1,179 @@
+@import "../../../global/constants";
+
+.header {
+  text-align: center;
+  top: auto;
+  margin: 3em auto;
+
+  img {
+    border-radius: 100%;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.pure-img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.brand-title,
+.social-neworks,
+.brand-tagline {
+  margin: 0;
+  text-align: center;
+}
+
+.brand-tagline {
+  font-weight: 300;
+  color: $blue_light;
+}
+
+.social-neworks a {
+  color: $white;
+  text-decoration: none;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.nav-item {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin-top: 1.3em;
+  margin-right: 1em;
+
+  a {
+    color: $white;
+    letter-spacing: 0.05em;
+    font-size: 1.1em;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+$icomoon-font-path: "~/fonts";
+@font-face {
+  font-family: "icomoon";
+  src: url($icomoon-font-path + "/icomoon.eot?rx25c5");
+  src: url($icomoon-font-path + "/icomoon.eot?rx25c5#iefix") format("embedded-opentype"),
+    url($icomoon-font-path + "/icomoon.ttf?rx25c5") format("truetype"),
+    url($icomoon-font-path + "/icomoon.woff?rx25c5") format("woff"),
+    url($icomoon-font-path + "/icomoon.svg?rx25c5#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+  content: "\e900";
+}
+.icon-twitter:before {
+  content: "\ea96"; 
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+
+@media only screen and (min-width: 48em) {
+  .header {
+    margin: 50% 2em 0;
+    text-align: center;
+
+    .head-img {
+      margin: auto;
+      width: 100%;
+      height: 220px;
+
+      div {
+        width: 100%;
+        height: 100%;
+      }
+
+      canvas {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .brand-title {
+      font-size: 2em;
+    }
+
+    .brand-tagline {
+      font-size: 1.2em;
+    }
+
+    .social-neworks {
+      margin-top: 1em;
+      span {
+        font-size: 1.5em;
+      }
+
+      a {
+        margin-right: 0.5em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 48em) and (max-width: 66em) {
+  .brand-title {
+    font-size: 1.5em;
+  }
+
+  .brand-tagline {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  /*≥ 568px <768px*/
+  .brand-title {
+    font-size: 2em;
+  }
+
+  .header {
+    margin: 1em auto;
+    img {
+      width: 25%;
+    }
+  }
+
+  .social-neworks {
+    margin-top: 0.5em;
+
+    span {
+      font-size: 1em;
+    }
+
+    a {
+      margin-right: 0.5em;
+    }
+  }
+}

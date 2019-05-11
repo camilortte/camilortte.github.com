@@ -1,7 +1,6 @@
 @import "~purecss/build/pure.css";
 @import "~purecss/build/grids-responsive.css";
-@import "constants";
-
+@import "../../global/constants";
 
 * {
   -webkit-box-sizing: border-box;
@@ -29,70 +28,14 @@ h3 {
   font-weight: 100;
 }
 
-/* LAYOUT CSS */
-.pure-img-responsive {
-  max-width: 100%;
-  height: auto;
-}
 
 #layout {
   padding: 0;
 }
 
-.header {
-  text-align: center;
-  top: auto;
-  margin: 3em auto;
-}
-
 .sidebar {
   background: $blue_dark;
   color: $white;
-  /* text-align: center; */
-}
-
-.brand-title,
-.social-neworks,
-.brand-tagline {
-  margin: 0;
-  text-align: center;
-}
-.brand-tagline {
-  font-weight: 300;
-  color: $blue_light;
-}
-.social-neworks a {
-  color: $white;
-  text-decoration: none;
-}
-
-.header img {
-  border-radius: 100%;
-  text-align: center;
-  margin: auto;
-}
-
-.nav-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
-.nav-item {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  margin-top: 1.3em;
-  margin-right: 1em;
-}
-.nav-item a {
-  color: $white;
-  letter-spacing: 0.05em;
-  font-size: 1.1em;
-}
-.nav-item a:hover,
-.nav-item a:focus {
-  text-decoration: underline;
 }
 
 .content-subhead {
@@ -167,37 +110,5 @@ h3 {
   color: $white;
   text-shadow: 0 1px 1px #333;
 }
-
-.footer {
-  padding: 1em 0;
-  color: #ccc;
-}
-.footer p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.footer a {
-  color: #ccc;
-  font-size: 80%;
-}
-.footer .pure-menu ul {
-  margin: 0;
-  padding: 0;
-}
-.footer .pure-menu-item a {
-  padding-left: 0.4em;
-  padding-right: 0.4em;
-}
-.footer .pure-menu a:hover,
-.footer .pure-menu a:focus {
-  background: none;
-}
-.footer hr {
-  border-top: 1px dashed #ccc;
-}
-.footer {
-  text-align: center;
-}
-
 
 @import "adaptive";
