@@ -6,7 +6,11 @@ tags: ["Angular.js", "d3.js", "simple_statistic"]
 
 Esta es una aplicación resarrollada con la ayuda de d3.js, Angular.js y simple_statistic.js, para la representación de la distribución normal.
 
-<img class="pure-img" src="./animacion.gif" lalt="gif-animacion"/>
+<!--https://web.dev/replace-gifs-with-videos -->
+<video class="pure-img" autoplay loop muted playsinline>
+  <source src="./animation.webm" type="video/webm">
+  <source src="./animation.mp4" type="video/mp4">
+</video>
 
 El área bajo la campana de Gauss representa la probabilidad de ocurrencia de un suceso. La curva esta dada por la siguiente expresión.
 

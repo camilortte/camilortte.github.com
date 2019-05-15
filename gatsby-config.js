@@ -91,9 +91,12 @@ module.exports = {
         fonts: [
           {
             family: `Lato`,
-            subsets: [`latin`],
+            // subsets: [`latin`],
+            // variants: [`300`, `300i`, `400`, `400i`],
           }
         ],
+        encode: false,
+        fontDisplay: "swap"
       },
     },
     {
