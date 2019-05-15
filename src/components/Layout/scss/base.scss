@@ -1,0 +1,60 @@
+@import "~purecss/build/pure.css";
+@import "~purecss/build/grids-responsive.css";
+@import "../../../global/constants";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $blue_light;
+}
+.gray {
+  color: $gray;
+}
+.orange {
+  color: $orange;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+h3 {
+  font-weight: 100;
+}
+
+#layout {
+  padding: 0;
+}
+
+.sidebar {
+  background: $blue_dark;
+  color: $white;
+}
+
+.content-subhead {
+  text-transform: uppercase;
+  color: #aaa;
+  border-bottom: 1px solid #eee;
+  padding: 0.4em 0;
+  font-size: 80%;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.content {
+  padding: 2em 1em 0;
+}
+
+.camilo-avatar {
+  border-radius: 100%;
+  float: left;
+  margin-right: 1em;
+}
+
+@import "adaptive";

@@ -1,0 +1,41 @@
+@media only screen and (min-width: 48em) {
+  /*≥ 768px	*/
+  .content {
+    padding: 2em 3em 0;
+    margin-left: 25%;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  } 
+}
+
+@media only screen and (max-width: 48em) {
+  /*≥ 568px <768px*/
+ 
+}
+
+@media only screen and (max-width: 35.5em) {
+  /*<= 568px*/
+  /* .brand-title {
+          font-size: 2.5em;
+      } 
+  
+      .header img{
+          width: 25%;
+      }
+  
+      .header {
+          margin: 1em auto;
+      }
+  
+      .social-neworks{
+          margin-top: 0.5em; 
+      }
+      .social-neworks span{
+          font-size: 1em;
+          margin-right: 0.5em;
+      } */
+}
