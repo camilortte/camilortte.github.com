@@ -28,7 +28,7 @@
     "gatsby-remark-smartypants": "^2.0.9",
     "gatsby-source-filesystem": "^2.0.33",
     "gatsby-transformer-remark": "^2.3.12",
-    "gatsby-transformer-sharp": "^2.1.19",
+    "gatsby-transformer-sharp": "^2.1.18",
     "google-fonts-plugin": "2.0.2",
     "node-sass": "^4.12.0",
     "pathseg": "^1.2.0",
@@ -38,9 +38,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-particles-js": "^2.6.0",
-    "react-scramble": "^0.4.2",
-    "react-typography": "^0.16.19",
-    "sharp": "^0.22.1"
+    "react-scramble": "^0.4.2"
   },
   "devDependencies": {
     "prettier": "^1.17.0"
