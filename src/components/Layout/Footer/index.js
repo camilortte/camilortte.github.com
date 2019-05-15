@@ -5,7 +5,8 @@ function Footer() {
     return (
         <footer>
             <hr />
-            <p>Made with love <span id="heart">&#128151;</span> - © {new Date().getFullYear()}</p>
+            <p>Made with love <span id="heart" role="img" arial-label="love" >&#128151;</span> 
+            - {new Date().getFullYear()}</p>
             <div className="pure-menu pure-menu-horizontal ">
                 <ul>
                     <li className="pure-menu-item"><a href="https://reactjs.org/" className="pure-menu-link">React</a></li>+

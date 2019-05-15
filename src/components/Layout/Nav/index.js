@@ -2,8 +2,11 @@ import React from "react"
 import Particles from 'react-particles-js';
 import './scss/nav.scss';
 import Scramble from 'react-scramble';
+import { Link } from "gatsby"
 
-function Nav() {
+function Nav(props) {
+	const { location } = props; 
+	console.log(location);
 	return (
 		<div className="header">
 			<div className="head-img">
@@ -43,7 +46,7 @@ function Nav() {
 								"move": {
 									"radius": 10
 								},
-								"url": "img/logo.svg",
+								"url": location.origin + "/img/logo.svg",
 								"inline": {
 									"arrangement": "equidistant"
 								},
@@ -94,20 +97,38 @@ function Nav() {
 			/>
 
 			<div className="social-neworks">
-				<a href="solial-link"><span className="icon-github"></span></a>
-				<a href="solial-link"><span className="icon-twitter"></span></a>
-				<a href="solial-link"><span className="icon-youtube"></span></a>
-				<a href="solial-link"><span className="icon-linkedin"></span></a>
+				<a href="https://github.com/camilortte" target="_blank"
+                    rel="noopener noreferrer"><span className="icon-github"></span></a>
+				<a href="https://co.linkedin.com/pub/camilo-antonio-ram%C3%ADrez-morales/83/13b/984" target="_blank"
+                    rel="noopener noreferrer"><span className="icon-linkedin"></span></a>				
+				<a href="https://twitter.com/camilortte" target="_blank"
+                    rel="noopener noreferrer"><span className="icon-twitter"></span></a>
+				<a href="https://www.youtube.com/channel/UC21XtxeLHw5QTkhVX8Stmag" target="_blank"
+                    rel="noopener noreferrer"><span className="icon-youtube"></span></a>				
 			</div>
 
 			<nav className="nav">
 				<ul className="nav-list">
-					<li className="nav-item">
-						<a className="pures-button" href="http://purecss.io">About</a>
-					</li>
-					<li className="nav-item">
-						<a className="pures-button" href="http://purecss.io">Blog</a>
-					</li>
+					{location && location.pathname.indexOf("about") < 0 &&(
+						<li className="nav-item">
+							<Link
+								to="/about"							
+								className="pures-button"
+								>
+								About
+							</Link>
+						</li>
+					)}	
+					{location && location.pathname !== '/' && (
+						<li className="nav-item">
+							<Link
+								to="/"
+								className="pures-button"
+								>
+								Blog
+							</Link>
+						</li>
+					)}						
 				</ul>
 			</nav>
 		</div>

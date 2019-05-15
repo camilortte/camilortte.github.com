@@ -1,10 +1,8 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
-import Layout from "../components/Layout/index";
-import SEO from "../components/seo"
-// import { rhythm, scale } from "../utils/typography"
+import React from "react";
+import { Link, graphql } from "gatsby";
+import Layout from "../../components/Layout/index";
+import SEO from "../../components/seo";
+import Post from "../../components/Post/index";
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -18,34 +16,10 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        {/* <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <Bio />
 
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
+        <Post data={post}/>
+        <div>
+        <ul className="paginator">
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
@@ -60,7 +34,9 @@ class BlogPostTemplate extends React.Component {
               </Link>
             )}
           </li>
-        </ul> */}
+        </ul>
+        </div>
+
       </Layout>
     )
   }
@@ -78,13 +54,14 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
+      excerpt(format: HTML)
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
-        description
+        date(formatString: "MMMM DD, YYYY")        
+        tags
       }
     }
   }
 `
+

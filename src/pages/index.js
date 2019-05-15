@@ -1,10 +1,8 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
+import React from "react";
+import { graphql } from "gatsby";
 import Layout from "../components/Layout/index";
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import SEO from "../components/seo";
+import Post from "../components/Post/index";
 
 class BlogIndex extends React.Component {
   render() {
@@ -18,29 +16,14 @@ class BlogIndex extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <Bio />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </div>
-          )
-        })}
+        <section className="posts">
+          <h1 className="content-subhead">Latest Posts</h1>
+          {posts.map(({ node }) => {            
+            return (
+              <Post data={node} />
+            )
+          })}
+        </section>
       </Layout>
     )
   }
@@ -58,14 +41,14 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
+          excerpt(format: HTML)
           fields {
             slug
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
-            title
-            description
+            title            
+            tags
           }
         }
       }
