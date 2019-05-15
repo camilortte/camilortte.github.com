@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer>
             <hr />
-            <p>Made with love <span id="heart" role="img" arial-label="love" >&#128151;</span> 
+            <p>Made with love <span id="heart" role="img" aria-labelledby="jsx-a11y/accessible-emoji" >&#128151;</span> 
             - {new Date().getFullYear()}</p>
             <div className="pure-menu pure-menu-horizontal ">
                 <ul>

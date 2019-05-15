@@ -6,7 +6,6 @@ import { Link } from "gatsby"
 
 function Nav(props) {
 	const { location } = props; 
-	console.log(location);
 	return (
 		<div className="header">
 			<div className="head-img">
@@ -84,12 +83,12 @@ function Nav(props) {
 				text="Programación y otro poco++"
 				steps={[
 				{
-					roll: 30,
+					roll: 10,
 					action: '+',
 					type: 'forward',
 				},
 				{
-					roll: 120,
+					roll: 20,
 					action: '-',
 					type: 'forward',
 				},

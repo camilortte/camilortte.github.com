@@ -18,9 +18,9 @@ class BlogIndex extends React.Component {
         />
         <section className="posts">
           <h1 className="content-subhead">Latest Posts</h1>
-          {posts.map(({ node }) => {            
+          {posts.map(({ node }) => {  
             return (
-              <Post data={node} />
+              <Post data={node} key={node.id}/>
             )
           })}
         </section>
@@ -41,6 +41,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
+          id
           excerpt(format: HTML)
           fields {
             slug
