@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `.:Camilortte's Blog:.`,
+    author: `Camilo Ramírez`,
+    description: `Este blog contiene ideas personales que quiero compartir, aquí encontrarás documentación de mis desarrollos, errores, problemas, y experiencias en el fabuloso mundo de la programación, que seguramente te podrán servir (Eso espero).`,
+    siteUrl: `https://www.unbackend.pro/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `camilortte`,
     },
   },
   plugins: [
@@ -51,7 +51,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-56089086-1`,
       },
     },
     `gatsby-plugin-feed`,

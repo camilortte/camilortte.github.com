@@ -118,7 +118,7 @@ $icomoon-font-path: "~/fonts";
       canvas {
         width: 100%;
         height: 100%;
-      }
+      }      
     }
 
     .brand-title {
@@ -154,6 +154,14 @@ $icomoon-font-path: "~/fonts";
 
 @media only screen and (max-width: 48em) {
   /*≥ 568px <768px*/
+  .head-img {
+    height: 220px;
+    canvas {
+      width: 520px !important;
+      height: 220px !important;
+    }
+  }
+
   .brand-title {
     font-size: 2em;
   }
