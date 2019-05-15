@@ -10,7 +10,6 @@ class Post extends React.Component {
         if( data.fields){
             title =  <Link to={data.fields.slug}> {title} </Link>
         }       
-       
         return (            
             <article className="post">
                 <header className="post-header">
@@ -30,7 +29,7 @@ class Post extends React.Component {
                 </header>
 
                 <div className="post-description">
-                    <p dangerouslySetInnerHTML={{ __html: data.html || data.excerpt }} />
+                    <div dangerouslySetInnerHTML={{ __html: data.html || data.excerpt }} />
                 </div>
                 {data.fields && data.fields.slug &&
                     <div>

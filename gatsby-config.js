@@ -10,6 +10,19 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `.:Camilortte's Blog:.`,
+        short_name: `UnBackend`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#663399`,
+        display: `standalone`,
+        icon: `static/favicon.png`,
+      },
+    },    
+    `gatsby-plugin-offline`,
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -62,20 +75,7 @@ module.exports = {
         exclude: ['/preview/**', '/do-not-track/me/too/'],
       },
     },
-    `gatsby-plugin-feed`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `.:Camilortte's Blog:.`,
-        short_name: `UnBackend`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `standalone`,
-        icon: `static/favicon.png`,
-      },
-    },
-    `gatsby-plugin-offline`,
+    `gatsby-plugin-feed`,    
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-sass`,
