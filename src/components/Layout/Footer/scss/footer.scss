@@ -12,7 +12,7 @@ footer {
 
     a {
         color: $text_color;
-        font-size: 80%;
+        font-size: 80%;        
     }
     .pure-menu{
         ul {
@@ -29,6 +29,7 @@ footer {
             padding-left: 0.4em;
             padding-right: 0.4em;
             color: $text_color;
+            display: inline;
         }
     }
     
