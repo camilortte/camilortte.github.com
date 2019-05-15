@@ -98,6 +98,6 @@ module.exports = {
         shortname: `unbackend-pro`
       }
     },
-    
+    `gatsby-plugin-netlify`    
   ],
 }

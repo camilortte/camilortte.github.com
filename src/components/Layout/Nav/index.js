@@ -97,13 +97,13 @@ function Nav(props) {
 
 			<div className="social-neworks">
 				<a href="https://github.com/camilortte" target="_blank"
-                    rel="noopener noreferrer"><span className="icon-github"></span></a>
+                    rel="noopener noreferrer"><span className="icon-github" aria-label="HitHub" ></span></a>
 				<a href="https://co.linkedin.com/pub/camilo-antonio-ram%C3%ADrez-morales/83/13b/984" target="_blank"
-                    rel="noopener noreferrer"><span className="icon-linkedin"></span></a>				
+                    rel="noopener noreferrer"><span className="icon-linkedin" aria-label="Linkedib" ></span></a>				
 				<a href="https://twitter.com/camilortte" target="_blank"
-                    rel="noopener noreferrer"><span className="icon-twitter"></span></a>
+                    rel="noopener noreferrer"><span className="icon-twitter" aria-label="Twitter" ></span></a>
 				<a href="https://www.youtube.com/channel/UC21XtxeLHw5QTkhVX8Stmag" target="_blank"
-                    rel="noopener noreferrer"><span className="icon-youtube"></span></a>				
+                    rel="noopener noreferrer" aria-label="Youtube" ><span className="icon-youtube"></span></a>				
 			</div>
 
 			<nav className="nav">
