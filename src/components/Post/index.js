@@ -19,7 +19,7 @@ class Post extends React.Component {
                     <h2 className="post-title">{title}</h2>
 
                     <p className="post-meta">
-                        {data.frontmatter.date}                            
+                        <span  className="post-date">{data.frontmatter.date}</span>                            
                         {data.frontmatter.tags && data.frontmatter.tags.map(( tag ) => {  
                             return (
                                 <span className="post-category post-category-design" href="#" key={tag}>{tag}</span>

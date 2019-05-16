@@ -13,8 +13,6 @@ function Footer() {
                 <li className="pure-menu-item"><a href="https://www.gatsbyjs.org/" className="pure-menu-link">Gatsby</a><span>+</span>
                     </li>
                 <li className="pure-menu-item"><a href="http://purecss.io/" className="pure-menu-link">PureCss</a><span>+</span></li>
-                <li className="pure-menu-item"><a href="https://rpj.bembi.org/" className="pure-menu-link">Particles
-                        JS</a><span>+</span></li>
                 <li className="pure-menu-item"><a href="https://www.netlify.com" className="pure-menu-link">Netlify</a></li>
                 </ul>
             </div>

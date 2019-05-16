@@ -32,13 +32,11 @@
     "gatsby-transformer-sharp": "^2.1.18",
     "google-fonts-plugin": "2.0.2",
     "node-sass": "^4.12.0",
-    "pathseg": "^1.2.0",
     "prismjs": "^1.16.0",
     "purecss": "^1.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
-    "react-particles-js": "^2.6.0",
     "react-scramble": "^0.4.2"
   },
   "devDependencies": {

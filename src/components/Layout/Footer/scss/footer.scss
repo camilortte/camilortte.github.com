@@ -36,7 +36,47 @@ footer {
     hr {
         border-top: 1px dashed $text_color;
     }
+    
+   
   
+}
+
+
+
+// @media only screen and (min-width: 48em) and (max-width: 66em) {
+//     // footer {
+//     //     .pure-menu-item {
+//     //         display: block;
+
+//     //         a{
+//     //             color: red;
+//     //         }
+
+//     //         span{
+//     //             display: none;
+//     //         }
+//     //     }
+//     // }
+// }
+
+
+
+@media only screen and (min-width: 48em) {    
+}
+  
+@media only screen and (max-width: 48em) {    
+}
+
+@media only screen and (max-width: 35.5em) {
+    footer {
+        .pure-menu-item {
+            display: block !important;
+            span{
+                display: none;
+            }
+        }
+    }
+    
 }
 
 @import 'animations';

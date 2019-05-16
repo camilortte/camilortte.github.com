@@ -107,18 +107,14 @@ $icomoon-font-path: "~/fonts";
 
     .head-img {
       margin: auto;
-      width: 100%;
-      height: 220px;
-
-      div {
-        width: 100%;
-        height: 100%;
+      width: 100%; 
+      
+      .logome{
+        border-radius: 100%;
+        width: 10em;
+        height: 10em;    
       }
 
-      canvas {
-        width: 100%;
-        height: 100%;
-      }      
     }
 
     .brand-title {
@@ -144,7 +140,7 @@ $icomoon-font-path: "~/fonts";
 
 @media only screen and (min-width: 48em) and (max-width: 66em) {
   .brand-title {
-    font-size: 1.5em;
+    font-size: 1.5em !important;
   }
 
   .brand-tagline {
@@ -154,14 +150,6 @@ $icomoon-font-path: "~/fonts";
 
 @media only screen and (max-width: 48em) {
   /*≥ 568px <768px*/
-  .head-img {
-    height: 220px;
-    canvas {
-      width: 520px !important;
-      height: 220px !important;
-    }
-  }
-
   .brand-title {
     font-size: 2em;
   }

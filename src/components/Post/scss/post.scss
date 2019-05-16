@@ -54,13 +54,29 @@
 }
 
 .paginator{
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    list-style: none; 
-    padding: 0px;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  list-style: none; 
+  padding: 0px;
 }
 
 .pure-img{
-    margin: auto;
+  margin: auto;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 48em) {   
+  .post-meta{
+    .post-date{
+      display: block; 
+      width: max-content;
+    }
+  
+    .post-category {
+      display: inline-block; 
+      width: max-content;
+      margin-bottom: 0.3em;
+    }
+  }  
 }

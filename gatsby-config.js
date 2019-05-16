@@ -50,7 +50,7 @@ module.exports = {
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
-            options: {
+            options: {  
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
@@ -118,6 +118,6 @@ module.exports = {
         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       }
     },
-    `gatsby-plugin-preload-link-crossorigin`,
+    // `gatsby-plugin-preload-link-crossorigin`,
   ],
 }
