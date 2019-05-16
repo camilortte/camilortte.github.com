@@ -19,6 +19,7 @@ module.exports = {
         theme_color: `#663399`,
         display: `standalone`,
         icon: `static/favicon.png`,
+        crossOrigin: `anonymous`
       },
     },    
     `gatsby-plugin-offline`,
@@ -116,6 +117,7 @@ module.exports = {
         // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       }
-    }   
+    },
+    `gatsby-plugin-preload-link-crossorigin`,
   ],
 }
