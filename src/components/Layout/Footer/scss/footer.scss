@@ -1,5 +1,5 @@
 footer {
-    $text_color:  #ccc;
+    $text_color:  #737373;
 
     padding: 1em 0;
     color: $text_color;
@@ -40,26 +40,6 @@ footer {
    
   
 }
-
-
-
-// @media only screen and (min-width: 48em) and (max-width: 66em) {
-//     // footer {
-//     //     .pure-menu-item {
-//     //         display: block;
-
-//     //         a{
-//     //             color: red;
-//     //         }
-
-//     //         span{
-//     //             display: none;
-//     //         }
-//     //     }
-//     // }
-// }
-
-
 
 @media only screen and (min-width: 48em) {    
 }

@@ -1,4 +1,5 @@
 @import "../../../../global/constants";
+$nav_brand_tagline_color:  $white;
 
 .header {
   text-align: center;
@@ -26,8 +27,8 @@
 
 .brand-tagline {
   font-weight: 300;
-  color: $blue_light;
-  font-size: 1.4em;
+  color: $nav_brand_tagline_color;
+  font-size: 1.2em;
   font-weight: 500;
 }
 
@@ -52,7 +53,7 @@
   a {
     color: $white;
     letter-spacing: 0.05em;
-    font-size: 1.1em;
+    font-size: 1.2em;
 
     &:hover,
     &:focus {
@@ -142,7 +143,7 @@ $icomoon-font-path: "~/fonts";
   }
 
   .brand-tagline {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 }
 
@@ -153,7 +154,7 @@ $icomoon-font-path: "~/fonts";
   }
 
   .brand-tagline {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   .header {

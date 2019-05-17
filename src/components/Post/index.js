@@ -22,7 +22,7 @@ class Post extends React.Component {
                         <span  className="post-date">{data.frontmatter.date}</span>                            
                         {data.frontmatter.tags && data.frontmatter.tags.map(( tag ) => {  
                             return (
-                                <span className="post-category post-category-design" href="#" key={tag}>{tag}</span>
+                                <span className="post-category post-category-pure" href="#" key={tag}>{tag}</span>
                             )
                         })}
                     </p>
@@ -33,7 +33,7 @@ class Post extends React.Component {
                 </div>
                 {data.fields && data.fields.slug &&
                     <div>
-                        <Link to={data.fields.slug}> <small>Continuar leyendo </small> </Link>
+                        <Link to={data.fields.slug} className="read-more"> Continuar leyendo... </Link>
                     </div>
                 }
 
