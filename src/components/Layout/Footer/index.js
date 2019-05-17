@@ -4,7 +4,7 @@ import './scss/footer.scss';
 function Footer() {
     return (
         <footer>
-            <hr />
+            <div className="content-subhead"/>
             <p>Made with love <span id="heart" role="img" aria-label="jsx-a11y/accessible-emoji" alt="love" >&#128151;</span> 
             - {new Date().getFullYear()}</p>
             <div className="pure-menu pure-menu-horizontal ">

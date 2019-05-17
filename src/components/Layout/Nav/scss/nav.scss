@@ -27,6 +27,8 @@
 .brand-tagline {
   font-weight: 300;
   color: $blue_light;
+  font-size: 1.4em;
+  font-weight: 500;
 }
 
 .social-neworks a {
@@ -121,10 +123,6 @@ $icomoon-font-path: "~/fonts";
       font-size: 2em;
     }
 
-    .brand-tagline {
-      font-size: 1.2em;
-    }
-
     .social-neworks {
       margin-top: 1em;
       span {
@@ -144,7 +142,7 @@ $icomoon-font-path: "~/fonts";
   }
 
   .brand-tagline {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 }
 
@@ -152,6 +150,10 @@ $icomoon-font-path: "~/fonts";
   /*≥ 568px <768px*/
   .brand-title {
     font-size: 2em;
+  }
+
+  .brand-tagline {
+    font-size: 1.4em;
   }
 
   .header {
