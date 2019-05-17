@@ -87,19 +87,27 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        fonts: [
-          {
-            family: `Lato`,
-            // subsets: [`latin`],
-            // variants: [`300`, `300i`, `400`, `400i`],
-          }
-        ],
-        encode: false,
-        fontDisplay: "swap"
-      },
+        google: {
+          families: ['Lato']
+        }
+      }
     },
+    // {
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Lato`,
+    //         // subsets: [`latin`],
+    //         // variants: [`300`, `300i`, `400`, `400i`],
+    //       }
+    //     ],
+    //     encode: false,
+    //     fontDisplay: "swap"
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-disqus`,
       options: {

@@ -65,6 +65,7 @@ $nav_brand_tagline_color:  $white;
 $icomoon-font-path: "~/fonts";
 @font-face {
   font-family: "icomoon";
+  font-display: swap;
   src: url($icomoon-font-path + "/icomoon.eot?rx25c5");
   src: url($icomoon-font-path + "/icomoon.eot?rx25c5#iefix") format("embedded-opentype"),
     url($icomoon-font-path + "/icomoon.ttf?rx25c5") format("truetype"),
@@ -78,6 +79,7 @@ $icomoon-font-path: "~/fonts";
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
+  font-display: swap;
   speak: none;
   font-style: normal;
   font-weight: normal;
