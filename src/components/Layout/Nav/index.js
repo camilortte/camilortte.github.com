@@ -20,6 +20,7 @@ function Nav(props) {
 								className="pure-img logome"
 								fixed={data.avatar.childImageSharp.fixed}
 								alt='logo'
+								fadeIn={false}
 								critical={true}
 							/>
 						</div>
@@ -90,7 +91,7 @@ const navQuery = graphql`
   query NavQiery {
     avatar: file(absolutePath: { regex: "/camilortte.png/" }) {
       childImageSharp {
-        fixed(width: 160, height: 160, jpegProgressive: false) {
+        fixed(width: 200, height: 250, jpegProgressive: true, quality: 60) {
           ...GatsbyImageSharpFixed_withWebp
         }
       }

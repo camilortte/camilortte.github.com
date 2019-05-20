@@ -18,7 +18,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `standalone`,
-        icon: `static/favicon.png`,
+        icon: `content/assets/logo/camilortte.png`,
         crossOrigin: `anonymous`
       },
     },    

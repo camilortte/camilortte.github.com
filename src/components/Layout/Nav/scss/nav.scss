@@ -3,18 +3,21 @@ $nav_brand_tagline_color:  $white;
 
 .header {
   text-align: center;
-  top: auto;
-  margin: 3em auto;
+  // top: auto;
+  // margin: 3em auto;
+  position: relative;
+  top: 20%;
 
   img {
-    border-radius: 100%;
     text-align: center;
     margin: auto;
+    height: 250px;
+    width: 200px;
   }
 }
 
 .pure-img-responsive {
-  max-width: 100%;
+  max-width: 100%; 
   height: auto;
 }
 
@@ -107,19 +110,13 @@ $icomoon-font-path: "~/fonts";
 
 @media only screen and (min-width: 48em) {
   .header {
-    margin: 50% 2em 0;
+    // margin: 40% 2em 0;
+    // vertical-align: middle;
     text-align: center;
 
     .head-img {
       margin: auto;
       width: 100%; 
-      
-      .logome{
-        border-radius: 100%;
-        width: 10em;
-        height: 10em;    
-      }
-
     }
 
     .brand-title {
@@ -147,6 +144,10 @@ $icomoon-font-path: "~/fonts";
   .brand-tagline {
     font-size: 1.2em;
   }
+
+  .header {
+    margin: 40% 1em 0;
+  }
 }
 
 @media only screen and (max-width: 48em) {
@@ -161,6 +162,8 @@ $icomoon-font-path: "~/fonts";
 
   .header {
     margin: 1em auto;
+    top: auto;
+    position: static;
     img {
       width: 25%;
     }
