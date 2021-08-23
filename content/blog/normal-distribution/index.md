@@ -19,7 +19,7 @@ El área bajo la campana de Gauss representa la probabilidad de ocurrencia de un
 Gracias a esta representación puedes ver y manipular las variables para ver los cambios de probabilidad. ( Mueve los Sliders para ver los cambios)
 
 <!-- end -->
-<iframe width="100%" height="300" src="//jsfiddle.net/camilortte/k4z5e1hm/17/embedded/result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="1200" src="//jsfiddle.net/camilortte/k4z5e1hm/17/embedded/result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
      
 Sí quieres conocer más sobre Distribución Normal en <a href="https://en.wikipedia.org/wiki/Normal_distribution">Wikipedia</a>  la encuentras.
